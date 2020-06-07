@@ -1,0 +1,435 @@
+body {
+    --mainblue: #5b92e5;
+    --mi6: #28b2a5;
+    --bojcc: #e5173a;
+    --unamir: #feae45;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+}
+
+.curspoint{
+    cursor: pointer;
+}
+
+.parent {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 3fr 1.5fr repeat(3, 1fr) 1.5fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+/*Main Divs*/
+.div1 { 
+    grid-area: 1 / 1 / 2 / 4;
+    background-image: url("Images/HP BG.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div2 { 
+    grid-area: 2 / 1 / 3 / 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.div3 {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid var(--bojcc);
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+}
+.div4 {
+    grid-area: 4 / 2 / 5 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: white;
+    border-bottom: 5px solid var(--mi6);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.div5 {
+    grid-area: 5 / 2 / 6 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 5px solid var(--unamir);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60vw;
+}
+.div6 {
+    grid-area: 6 / 1 / 7 / 4;
+    background-color: var(--mainblue);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div7 {
+    grid-area: 3 / 1 / 6 / 2;
+
+}
+.div8 {
+    grid-area: 3 / 3 / 6 / 4;
+}
+
+#homelogo{
+    height: 30vh;
+    margin: 0px;
+}
+#homelogo img{
+    height: 30vh;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(.75px);
+}
+#title{
+    color: white;
+    font-size: 50pt;
+    margin: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(.75px);
+}
+#clockdiv{
+    height: 150px;
+    width: auto;
+    border: 6px solid white;
+    margin-top: 5px;
+	font-family: sans-serif;
+	color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+	font-weight: 600;
+	text-align: center;
+    font-size: 80pt;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(0.75px);
+}
+.counternumber{
+    padding: 0px 15px;
+    display: inline;
+}
+#clockdiv div > span{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 70pt;
+    align-items: center;
+    justify-content: center;
+    /*position: relative;
+    bottom: 15px;*/
+}
+.countercolon{
+    padding: 0px;
+    display: inline;
+    position: relative;
+    bottom: 25px;
+    border: 0px;
+}
+.smalltext{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+}
+
+/*Main Event Box styling*/
+#mainpicl{
+    width: 20vw;
+    background-image: url("Images/Lecture Hall - Test.JPG");
+    background-size: 50vw;
+    background-position: left center;
+    position: relative;
+    bottom: 5px;
+    box-shadow: inset -10px 0px 10px rgba(0, 0, 0, 0.3);
+}
+#mainevent{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 1;
+    border-bottom: 5px solid var(--mainblue);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 10px;
+}
+#maineventlogo{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+#maineventlogo img{
+    width: 15vw;
+}
+#maineventcontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px 15px;
+}
+#maineventcontent h1{
+    color: var(--mainblue);
+    margin-top: 0;
+    font-size: 32pt;
+    font-weight: 800;
+}
+#maineventcontent p{
+    font-size: 16pt;
+    text-align: justify;
+    margin-top: 0;
+}
+#mainpicr{
+    width: 20vw;
+    background-image: url("Images/Lecture Hall - Test.JPG");
+    background-size: 50vw;
+    background-position: right center;
+    position: relative;
+    bottom: 5px;
+    box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Committee Boxes*/
+#bojcccontent h1{
+    color: var(--bojcc);
+}
+#mi6content h1{
+    color: var(--mi6);
+}
+#unamircontent h1{
+    color: var(--unamir);
+}
+.commcontent h1{
+    position: relative;
+    top: 15px;
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 24pt;
+}
+.commcontent p{
+    text-align: justify;
+    margin-top: 0;
+}
+.commlink {
+    text-align: right;
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.commlinkhov {
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 600;
+    color: white;
+}
+.commlinkhov:hover {
+    opacity: .75;
+    text-decoration: underline;
+}
+.commlink:active {
+    opacity: .5;
+}
+.commlink:hover {
+    opacity: .75;
+    text-decoration: underline;
+}
+.commicon{
+    width: 70%;
+    filter: drop-shadow(0px 0px 5px black);
+}
+.commlogobox {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.commcontent{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 15px;
+}
+.hovbox {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    top: 150%;
+    transition: all 0.5s;
+    font-size: 16pt;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(1px);
+    height: 101%;
+}
+.div3:hover .hovbox{
+    top: 0%;
+    transition: all 0.5s;
+}
+.div4:hover .hovbox{
+    top: 0%;
+    transition: all 0.5s;
+}
+.div5:hover .hovbox{
+    top: 0%;
+    transition: all 0.5s;
+}
+
+#unamirlogo {
+    background-image: url("Images/Unamir-HP.jpg");
+}
+#unamirhovbox{
+    background-color: var(--unamir);
+    opacity: 0.9;
+}
+#unamirlink {
+    color: var(--unamir);
+}
+#unamiricon{
+    filter: drop-shadow(0px 0px 5px var(--unamir));
+}
+#bojcclogo {
+    background-image: url("Images/BOJCC-HP.jpg");
+}
+#bojcchovbox{
+    background-color: var(--bojcc);
+    opacity: 0.9;
+    border-top-left-radius: 5px;
+}
+#bojcclink {
+    color: var(--bojcc);
+}
+#bojccicon{
+    filter: drop-shadow(0px 0px 5px var(--bojcc));
+}
+#mi6logo {
+    background-image: url("Images/MI6-HP.jpg");
+}
+#mi6hovbox{
+    background-color: var(--mi6);
+    opacity: 0.9;
+}
+#mi6link {
+    color: var(--mi6);
+}
+#mi6icon{
+    filter: drop-shadow(0px 0px 5px var(--mi6));
+}
+
+.footlink{
+    text-decoration: none;
+    color: white;    
+}
+.footlink:any-link {
+    text-decoration: none;
+    color: white;
+}
+.footlink:active {
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+}
+#apply{
+    font-size: 22pt;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: var(--mainblue);
+}
+#apply:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#credits{
+    color: white;
+    position: relative;
+    top: 20%;
+}
+
+@media only screen and (max-width : 1400px) {
+.div2{
+    justify-content: center;
+}
+    #mainpicl{
+    display: none;
+}
+#mainpicr{
+    display: none;
+}
+#mainevent{
+    width: 95vw;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.div7{
+    display: none;
+}
+.div8{
+    display: none;
+}
+.div5{
+    width: 95vw;
+    grid-template-columns: 2fr 3fr;
+}
+.div3{
+    grid-template-columns: 2fr 3fr;
+}
+.div4{
+    grid-template-columns: 2fr 3fr;
+}
+#maineventcontent p{
+    font-size: 21px;
+}
+.commcontent h1{
+    font-size: 32px;
+}
+.commcontent p{
+    font-size: 19px;
+}
+.commlink {
+    text-align: right;
+    align-self: flex-end;
+    font-size: 21px;
+    font-weight: 600;
+}
+}

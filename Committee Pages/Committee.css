@@ -1,0 +1,223 @@
+body{
+    --mainblue: #5b92e5;
+    --mi6: #28b2a5;
+    --bojcc: #e5173a;
+    --unamir: #feae45;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+}
+.parent {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 75vh 1fr auto 35vh;
+column-gap: 0px;
+row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 4;
+    background-image: url("../Images/HP BG.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -10px 20px rgba(0, 0, 0, .2);
+}
+.div2 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+    margin-top: 30px;
+}
+.div3 {
+    grid-area: 3 / 2 / 4 / 3;
+    margin-top: 20px;
+    font-size: 16pt;
+    text-align: left;
+}
+.div4 {
+    grid-area: 4 / 1 / 5 / 4;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div5 { grid-area: 2 / 1 / 4 / 2; }
+.div6 { grid-area: 2 / 3 / 4 / 4; }
+
+#bojccbg{
+    background-image: url("../Images/BOJCC BG.svg");
+}
+#MI6bg{
+    background-image: url("../Images/MI6 BG.png");
+}
+#unamirbg{
+    background-image: url("../Images/UNAMIR BG.png");
+}
+#homelogo{
+    height: 30vh;
+    margin: 0px;
+}
+#homelogo img{
+    height: 30vh;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(1px);
+}
+#title{
+    text-align: center;
+    color: white;
+    font-size: 50pt;
+    margin: 20px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(1px);
+}
+
+.secphoto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.secphoto img{
+    height: 18vw;
+    min-height: 300px;
+    border: 7px solid white;
+    border-bottom: 0px;
+    box-shadow:
+        0px 0px 5px rgba(0, 0, 0, .3);
+}
+.secname {
+    font-size: 18pt;
+    padding: 7px 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    box-shadow:
+        0px 2px 5px rgba(0, 0, 0, .3),
+        0px -5px 10px rgba(255, 255, 255, .3);
+    border-bottom-left-radius: 10px;
+}
+.secpost {
+    font-size: 16pt;
+    padding: 5px 0px;
+    width: 75%;
+    align-self: flex-end;
+    background-color: white;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:
+        0px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.bold {
+    font-size: 18pt;
+    font-weight: 800;
+}
+#content{
+    text-align: justify;
+}
+
+.footlink{
+    text-decoration: none;
+    color: white;    
+}
+.footlink:any-link {
+    text-decoration: none;
+    color: white;
+}
+.footlink:active {
+    color: white;
+    opacity: .5;
+}
+.apply{
+    font-size: 22pt;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: var(--mainblue);
+}
+.apply:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#credits{
+    color: white;
+    position: relative;
+    top: 20%;
+}
+
+.bojccborder img{
+    border-color: var(--bojcc);
+}
+.bojcccolor{
+    color: var(--bojcc);
+}
+.bojccbg {
+    background-color: var(--bojcc);
+}
+#bojccapply{
+    color: var(--bojcc);
+}
+.mi6border img{
+    border-color: var(--mi6);
+}
+.mi6color{
+    color: var(--mi6);
+}
+.mi6bg {
+    background-color: var(--mi6);
+}
+#mi6apply{
+    color: var(--mi6);
+}
+.unamirborder img{
+    border-color: var(--unamir);
+}
+.unamircolor{
+    color: var(--unamir);
+}
+.unamirbg {
+    background-color: var(--unamir);
+}
+#unamirapply{
+    color: var(--unamir);
+}
+
+@media only screen and (max-width : 1570px) {
+.div2{
+    justify-content: space-around;
+}
+}
+@media only screen and (max-width : 1200px) {
+.div5 {
+    display: none;
+}
+.div6 {
+    display: none;
+}
+.div2 {
+    width: 95vw;
+}
+.parent {
+    grid-template-rows: 75vh 1fr auto 20vh;
+}
+#credits {
+    position: relative;
+    top: 10%;
+}
+}
